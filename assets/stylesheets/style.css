@@ -1,0 +1,381 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background: #414f6b;
+  min-width: 320px;
+ }
+* {
+  box-sizing:border-box;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  display:block;
+  float:none;
+  content:"";
+  clear:both;
+}
+b, strong {
+  font-weight: 600;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.no_padding {
+  padding: 0;
+}
+.num {
+  font-family: 'Oswald', sans-serif;
+  color: #414f6b;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  line-height: 145px;
+}
+.num span {
+  font-size: 145px;
+  opacity: .5;
+  letter-spacing: -8px;
+}
+.num b {
+  display: block;
+  position: absolute;
+  right: -89px;
+  top: 20px;
+}
+section {
+  background: #FFF;
+}
+
+header, section {
+  position: relative;
+}
+section .image-container {
+  position: relative;
+  z-index: 0
+}
+section .image-container > img {
+  width: 100%;
+  height: auto;
+}
+
+.logo-line .logo-line-left {
+  float: left;
+}
+.logo-line img {
+  margin: 15px 0;
+}
+.logo-line .logo-line-right {
+  float: right;
+}
+.logo-line-right a {
+  color: #fff;
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 20px 0 0 50px;
+  letter-spacing: 1.1px;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 3px 2px 0;
+  border-bottom: 1px solid #FFF;
+}
+#section1 .logo-line {
+  position: relative;
+  z-index: 1;
+}
+#section1 .logo-line > div {
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+#section1 .logo-line img {
+  margin: 7px 0 0;
+}
+#section1 .image-container {
+  position: relative;
+  z-index: 0;
+  background: url("../images/section1_bg.jpg") top center no-repeat;
+  background-size: cover;
+  height: 820px;
+}
+#section2 .logo-line-right a {
+  color: #414f6b;
+  border-color: #414f6b;
+  margin: 25px 0 0 50px;
+}
+#section2 .image-container {
+  background: url("../images/section2_bg.jpg") top center no-repeat;
+  background-size: cover;
+  height: 905px;
+  position: relative;
+}
+#section2 .num {
+  margin-top: 40px;
+}
+#section2 .num + div {
+  margin: -53px 0 0 75px;
+}
+#section3 .num {
+  margin: 10px 0 -25px 0;
+}
+#section3 .num b {
+  right: -58px;
+}
+#section3 .num + div {
+  display: inline-block;
+  width: 60%;
+  margin: 0 0 0 85px;
+  position: relative;
+  top: -43px;
+}
+#section3 .image-container {
+  transition: 0.3s ease-out;
+  background: url("../images/mountain1.jpg") top center no-repeat;
+  background-size: cover;
+  height: 545px
+}
+.schedule_block {
+  width: 355px;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 40px;
+  top: 100px;
+  position: relative;
+}
+.schedule_block h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #414f6b;
+  font-size: 32px;
+  font-weight: bold;
+}
+.schedule_block li {
+  min-height: 20px;
+}
+.mountain-tabs {
+  background: #414F6B;
+  position: relative;
+  z-index: 5;
+}
+#mountainTabs {
+  position: relative;
+  background: #414F6B;
+}
+.mountain-tabs a {
+  color: #b0b4be;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#mountainTabs a.active {
+  background: #b0b4be;
+  color: #414F6B;
+}
+#drop {
+  display:none;
+}
+#drop:after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;  
+}
+
+footer {
+  background: #414f6b;
+  color: #63769d;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: .9px;
+}
+footer .logo-line-right {
+  padding-top: 25px;
+}
+/*Slider*/
+.carousel-container {
+  background-color: rgba(65, 79, 107, 0.9);
+  padding: 25px 0 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.list_carousel {
+  width: 360px;
+}
+.list_carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+.list_carousel li {
+  text-align: center;
+  margin: 0;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 0 5px;
+}
+.list_carousel.responsive {
+  width: auto;
+  margin-left: 0;
+}
+.pager {
+  text-align: center;
+}
+.pager a {
+  margin: 0 5px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  border-radius: 100%;
+  background:#FFF;
+}
+.pager a.selected {
+  opacity: 1;
+}
+.pager a span {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media (max-width: 992px) {
+  #section1 .image-container {
+    height: 550px;
+  }
+  #section2 .image-container {
+    height: 850px;
+  }
+}
+@media (max-width: 768px) {
+ .container{
+  max-width: none;
+ }
+  .num {
+    font-size: 25px;
+  }
+  .num span {
+    font-size: 85px;
+    letter-spacing: 0px;
+  }
+  .num b {
+    right: -69px;
+    top: 6px;
+  }
+  #section1 .image-container {
+    height: 460px;
+  }
+  #section2 .image-container {
+    height: 680px;
+  }
+  #section2 .num {
+    margin-top: 0;
+  }
+  #section2 .num + div {
+    margin: -53px 0 0 0;
+  }
+  #section3 .num {
+    margin: -20px 0 -40px 0;
+  }
+  #section3 .num b {
+    right: -45px;
+  }
+  #section3 .num + div {
+    top: -7px;
+  }
+  #drop {
+    display: block;
+    padding-left: 26px;
+  }
+  #mountainTabs {
+    display: inline-block;
+    position: absolute;
+    overflow:hidden;
+    transition: 0.1s ease-out;
+    height:auto;
+    max-height:0;
+    padding: 0 10px;
+  }
+  #mountainTabs.open {
+    height:auto;
+    max-height:1000px;
+    padding: 10px;
+  }
+  #mountainTabs li {
+    display: block;
+  }
+}
+
+@media (max-width: 666px) {
+  #section3 .num + div {
+    display: block;
+    width: auto;
+    top: 0;
+    margin: -15px 0 15px 0;
+  }
+  #section1 .image-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-line img {
+    max-height: 35px;
+    width: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .logo-line .logo-line-left {
+    float: none;
+  }
+  footer .logo-line .logo-line-right {
+    padding: 0 0 10px 0;
+    float: none;
+  }
+  .logo-line-right a {
+    margin: 12px 0 0 10px;
+    letter-spacing: normal;
+  }
+  #section1 .image-container {
+    height: 300px;
+  }
+  #section2 .logo-line-right a {
+    margin: 22px 0 0 10px;
+  }
+  #section2 .image-container {
+    height: 860px;
+  }
+  .schedule_block {
+    width: auto;
+    height: auto;
+    padding: 15px;
+  }
+  #section3 .image-container {
+    background-position: top right;
+    height: 470px;
+  }
+}
