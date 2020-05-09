@@ -187,7 +187,7 @@ section .image-container > img {
 #drop {
   display:none;
 }
-#drop:after {
+#drop a:after {
   display: inline-block;
   margin-left: .255em;
   vertical-align: .255em;
@@ -308,7 +308,10 @@ footer .logo-line-right {
   }
   #drop {
     display: block;
-    padding-left: 26px;
+    margin-bottom: 10px;
+  }
+  .mountain-tabs {
+    height: 46px;
   }
   #mountainTabs {
     display: inline-block;
@@ -316,13 +319,13 @@ footer .logo-line-right {
     overflow:hidden;
     transition: 0.1s ease-out;
     height:auto;
-    max-height:0;
+    max-height: 46px;
     padding: 0 10px;
   }
   #mountainTabs.open {
     height:auto;
     max-height:1000px;
-    padding: 10px;
+    padding: 0 10px 10px;
   }
   #mountainTabs li {
     display: block;
